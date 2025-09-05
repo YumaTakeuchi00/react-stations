@@ -1,6 +1,11 @@
 // DO NOT DELETE
 
+import { data } from 'browserslist'
 import './App.css'
+//import { useState } from 'react'
+import { Header } from './Header'
+import { Description } from './Description'
+import { DogListContainer } from './DogListContainer'
 
 /**
  * @type {() => JSX.Element}
@@ -8,7 +13,11 @@ import './App.css'
 export const App = () => {
   return (
     <div>
-      <h2>Hello, world!</h2>
+      <Header />
+      <Description />
+      <DogListContainer />
     </div>
   )
 }
+
+export default App
